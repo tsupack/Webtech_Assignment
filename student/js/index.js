@@ -14,3 +14,15 @@ $(document).ready(function () {
         });
     })
 });
+function Show() {
+    var x = document.getElementById("Description");
+    var show = document.getElementById("show");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        show.value = "Show assignment description";
+    }
+    else {
+        x.style.display = "none";
+        show.value = "Hide assignment description";
+    }
+}

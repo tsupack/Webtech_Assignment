@@ -10,10 +10,36 @@ a:visited{
     color:white;
     text-decoration: none;
 }
+button{
+    background-color: lightseagreen;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    alignment: center;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+button:HOVER{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 #everything{
     margin:auto;
     width: 100%;
     alignment: center;
+}
+#header{
+    text-align: left;
+    font-size: 45px;
+    color: darkslategrey;
+}
+#Description{
+    display: none;
 }
 #banner{
     height: 100px;
@@ -30,21 +56,24 @@ a:visited{
     alignment: center;
     border-radius: 20px;
 }
-#menuBar .menuButton:HOVER{
-    background-color: black;
-}
 #menuBar .menuButton{
     width: 160px;
+    height: 25px;
     background: gray;
     border: 2px solid black;
     padding: auto;
-    text-align: center;
+    text-align-all: center;
     color: gray;
     margin: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     display: inline-block;
+    transition-duration: 0.4s;
+}
+#menuBar .menuButton:HOVER{
+    background-color: black;
+    border: 2px solid grey;
 }
 #content_outer{
     border-radius: 20px;
