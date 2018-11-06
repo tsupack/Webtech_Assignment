@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="container">
+    <form id="addmanu" action="/addManufacturer" method="post">
+        <div class="row">
+            <div class="col-50">
+                <label>Name:</label>
+            </div>
+            <div class="col-50">
+                <input type="text" name="name" required="required" placeholder="Manufacturer name..." autofocus/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                <label>Country:</label>
+            </div>
+            <div class="col-50">
+                <input type="text" name="country" required="required" placeholder="The origin country of the manufacturer..."/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                <label>Founded:</label>
+            </div>
+            <div class="col-50">
+                <input type="text" name="founded" required="required" placeholder="Which year was the company founded..."/>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Add manufacturer">
+        </div>
+    </form>
+</div>
+</html>
