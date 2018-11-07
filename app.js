@@ -242,7 +242,7 @@ app.post('/addCar', function (req, res) {
         "horsepower":req.body.horsepower
     };
     cars.push(carJSON);
-    //res.send(cars);
+    res.send(cars);
 });
 
 app.post('/addManufacturer', function (req, res) {
@@ -258,7 +258,7 @@ app.post('/addManufacturer', function (req, res) {
         "founded": req.body.founded
     };
     manufacturers.push(manufacturer);
-    //res.send(manufacturers);
+    res.send(manufacturers);
 });
 
 app.get('/', function (req, res) {

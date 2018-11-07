@@ -23,7 +23,7 @@ button{
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     font-size: 15px;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 button:HOVER{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -32,14 +32,6 @@ button:HOVER{
     margin:auto;
     width: 100%;
     alignment: center;
-}
-#header{
-    text-align: left;
-    font-size: 45px;
-    color: darkslategrey;
-}
-#Description{
-    display: none;
 }
 #banner{
     height: 100px;
@@ -69,7 +61,7 @@ button:HOVER{
     -moz-border-radius: 20px;
     border-radius: 20px;
     display: inline-block;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 #menuBar .menuButton:HOVER{
     background-color: black;
@@ -87,6 +79,14 @@ button:HOVER{
     margin-left: 20px;
     margin-right: 20px;
 }
+#header{
+    text-align: left;
+    font-size: 45px;
+    color: darkslategrey;
+}
+#Description{
+    display: none;
+}
 #allTable{
     border-collapse: collapse;
     text-align: center;
@@ -103,7 +103,13 @@ button:HOVER{
 #allTabletd{
     border: 1px solid black;
 }
-input[type=text], input[type=number], select{
+tr:nth-child(even){
+    background: skyblue;
+}
+tr:nth-child(odd){
+    background: lightblue;
+}
+input[type=text], input[type=date], input[type=number], select{
     width: 100%;
     padding: 12px;
     border: 1px solid black;
@@ -127,6 +133,10 @@ input[type=submit]{
     float: right;
     font-family: "Times New Roman", Times, serif;
     font-size: 15px;
+    transition-duration: 0.5s;
+}
+input[type=submit]:HOVER {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .container{
     margin: auto;
@@ -144,7 +154,7 @@ input[type=submit]{
     clear: both;
 }
 @media screen and (max-width: 600px){
-    .col-50l, .col-50, input[type=submit] {
+    .col-50, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }

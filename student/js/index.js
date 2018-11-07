@@ -1,11 +1,12 @@
 $(document).ready(function () {
     $("#content").load("content.html");
 });
+
 $(document).ready(function () {
     $.each($(".menuButton"), function (mbIndex, mbValue) {
         $(mbValue).click(function (event) {
             event.preventDefault();
-            if (!($(this).find('a').attr("href") == "index.html")) {
+            if (!($(this).find('a').attr("href") === "index.html")) {
                 $("#content").load($(this).find('a').attr("href"));
             }
             else {
@@ -14,15 +15,18 @@ $(document).ready(function () {
         });
     })
 });
-function Show() {
+
+function Show(button_id) {
+    var button_text = document.getElementById(button_id);
     var x = document.getElementById("Description");
-    var show = document.getElementById("show");
-    if (x.style.display === "none") {
+    if (button_text.firstChild.data === "Show assignment description")
+    {
+        button_text.firstChild.data = "Hide assignment description";
         x.style.display = "block";
-        show.value = "Show assignment description";
     }
-    else {
+    else
+    {
+        button_text.firstChild.data = "Show assignment description";
         x.style.display = "none";
-        show.value = "Hide assignment description";
     }
 }

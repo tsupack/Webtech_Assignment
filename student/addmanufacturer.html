@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type="application/javascript" src="js/addmanufacturer.js"></script>
 <div class="container">
     <form id="addmanu" action="/addManufacturer" method="post">
         <div class="row">
@@ -23,7 +24,7 @@
                 <label>Founded:</label>
             </div>
             <div class="col-50">
-                <input type="text" name="founded" required="required" placeholder="Which year was the company founded..."/>
+                <input id="date_field" type="date" name="founded" required="required" />
             </div>
         </div>
         <div class="row">
