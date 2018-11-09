@@ -34,16 +34,6 @@
                 </div>
                 <div class="col-50">
                     <div class="select">
-                        <script>
-                            $.getJSON('manufacturerNames', function (data) {
-                                var select = $('<select name="manufacturer" required="required"></select>');
-                                $.each(data, function (key, value) {
-                                    var option = $('<option value="' + value+ '">' + value + '</option>');
-                                    select.append(option);
-                                });
-                                $(".select").append(select);
-                            })
-                        </script>
                     </div>
                 </div>
             </div>
