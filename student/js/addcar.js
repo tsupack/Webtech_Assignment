@@ -7,8 +7,9 @@ $(function (){
             url: 'addCar',
             data: $('form').serialize(),
             success: function () {
-                window.alert("Submission successful!");
-                //promttal mehet majd a listcars.html
+                if (confirm("Submission successful! Would you like to see all the cars?")) {
+                    $("#content").load("listcars.html");
+                }
             },
             error: function () {
                 window.alert("Submission failed!");

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <script type="application/javascript" src="js/addmanufacturer.js"></script>
-<div class="container">
-    <form id="addmanu" action="/addManufacturer" method="post">
-        <div class="row">
-            <div class="col-50">
-                <label>Name:</label>
+<div class="fade-in">
+    <div class="container">
+        <form id="addmanu" action="/addManufacturer" method="post">
+            <div class="row">
+                <div class="col-50">
+                    <label>Name:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="name" required="required" placeholder="Manufacturer name..." autofocus/>
+                </div>
             </div>
-            <div class="col-50">
-                <input type="text" name="name" required="required" placeholder="Manufacturer name..." autofocus/>
+            <div class="row">
+                <div class="col-50">
+                    <label>Country:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="country" required="required" placeholder="The origin country of the manufacturer..."/>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Country:</label>
+            <div class="row">
+                <div class="col-50">
+                    <label>Founded:</label>
+                </div>
+                <div class="col-50">
+                    <input id="date_field" type="date" name="founded" required="required" />
+                </div>
             </div>
-            <div class="col-50">
-                <input type="text" name="country" required="required" placeholder="The origin country of the manufacturer..."/>
+            <div class="row">
+                <input type="submit" value="Add manufacturer">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Founded:</label>
-            </div>
-            <div class="col-50">
-                <input id="date_field" type="date" name="founded" required="required" />
-            </div>
-        </div>
-        <div class="row">
-            <input type="submit" value="Add manufacturer">
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 </html>

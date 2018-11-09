@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<div id="header">Introduction</div>
-<p>
-    Hi! I am Alex Nussbaumer (WLM9W8) and this is my solution for the Webtechnologies home assignment.
-    In this assignment I had to create the front-end for an already existing back-end using HTML, CSS and JS.
-    The topic of the assignment is an online car database, that can store cars and car manufacturers.
-</p>
-
-<button id="show" onclick="Show(this.id)">Show assignment description</button>
-
-<div id="Description">
-    <div id="header">Assignment description</div>
-    <p>For the assignment you have to write the front-end for the given back-end by using the following:</p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript with jQuery</li>
-    </ul>
-    <p>The following methods with these URLs have to be implemented:</p>
-    <ul>
-        <li>manufacturers: Returns a json containing every manufacturer in the "database".</li>
-        <li>manufacturerNames: Returns the names of the manufacturers. Should be used in forms.</li>
-        <li>cars: Returns a json containing every car in the "database".</li>
-        <li>manufacturer: Returns the cars that belong to that manufacturer stored in cookies.</li>
-        <li>addCar: Adds a new car to the "database". If there is an already existing car with this name in the database
-            , it returns a 409 http error code.</li>
-        <li>addManufacturer: Same as addCar, but with manufacturer.</li>
-        <li>/: returns index.html stored in the student folder which you have to create.</li>
-    </ul>
+<div class="fade-in">
+    <div id="header">Introduction</div>
     <p>
-        Usage of CSS, other JS libraries, frameworks results in failure. Lack of CSS and jQuery results in failure.
-        Fundamental tempering with the server results in failure. Change of port or host is allowed if necessary,
-        but the webpage should run on any computer.
-        If you can not prove that you wrote the front-end (can't change basic details, explain something) you will fail.
-        Lack of features will result in failure. etc.
+        Hi! I am Alex Nussbaumer (WLM9W8) and this is my solution for the Webtechnologies home assignment.
+        In this assignment I had to create the front-end for an already existing back-end using HTML, CSS and JS.
+        The topic of the assignment is an online car database, that can store cars and car manufacturers.
     </p>
-    <p>
-        The offered grade for the course will be given based on the quality of the code, the webpage,
-        and your level of understanding.
-        The assignments can be written during the practice classes after we learned about AJAX.
-        Absence will be noted in the attendance!
-        The assignment can be evaluated after the middle of November. Adam Satan will evaluate it and give your offered grade.
-    </p>
+    <div id="button_div">
+        <button id="show" onclick="Show(this.id)">Show assignment description</button>
+    </div>
+
+    <div id="Description">
+        <div id="header">Assignment description</div>
+        <p>For the assignment you have to write the front-end for the given back-end by using the following:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript with jQuery</li>
+        </ul>
+        <p>The following methods with these URLs have to be implemented:</p>
+        <ul>
+            <li>manufacturers: Returns a json containing every manufacturer in the "database".</li>
+            <li>manufacturerNames: Returns the names of the manufacturers. Should be used in forms.</li>
+            <li>cars: Returns a json containing every car in the "database".</li>
+            <li>manufacturer: Returns the cars that belong to that manufacturer stored in cookies.</li>
+            <li>addCar: Adds a new car to the "database". If there is an already existing car with this name in the database
+                , it returns a 409 http error code.</li>
+            <li>addManufacturer: Same as addCar, but with manufacturer.</li>
+            <li>/: returns index.html stored in the student folder which you have to create.</li>
+        </ul>
+        <p>
+            Usage of CSS, other JS libraries, frameworks results in failure. Lack of CSS and jQuery results in failure.
+            Fundamental tempering with the server results in failure. Change of port or host is allowed if necessary,
+            but the webpage should run on any computer.
+            If you can not prove that you wrote the front-end (can't change basic details, explain something) you will fail.
+            Lack of features will result in failure. etc.
+        </p>
+        <p>
+            The offered grade for the course will be given based on the quality of the code, the webpage,
+            and your level of understanding.
+            The assignments can be written during the practice classes after we learned about AJAX.
+            Absence will be noted in the attendance!
+            The assignment can be evaluated after the middle of November. Adam Satan will evaluate it and give your offered grade.
+        </p>
+    </div>
 </div>
 </html>

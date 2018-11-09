@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <script type="application/javascript" src="js/addcar.js"></script>
-<div class="container">
-    <form action="/addCar" method="post">
-        <div class="row">
-            <div class="col-50">
-                <label>Car model:</label>
-            </div>
-            <div class="col-50">
-                <input type="text" name="name" required="required" placeholder="Car model..." autofocus/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Consumption:</label>
-            </div>
-            <div class="col-50">
-                <input type="text" name="consumption" required="required" placeholder="Consumption in l/100km..."/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Color:</label>
-            </div>
-            <div class="col-50">
-                <input type="text" name="color" required="required" placeholder="Car color..."/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Manufacturer:</label>
-            </div>
-            <div class="col-50">
-                <div class="select">
-                    <script>
-                        $.getJSON('manufacturerNames', function (data) {
-                            var select = $('<select name="manufacturer" required="required"></select>');
-                            $.each(data, function (key, value) {
-                                var option = $('<option value="' + value+ '">' + value + '</option>');
-                                select.append(option);
-                            });
-                            $(".select").append(select);
-                        })
-                    </script>
+<div class="fade-in">
+    <div class="container">
+        <form action="/addCar" method="post">
+            <div class="row">
+                <div class="col-50">
+                    <label>Car model:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="name" required="required" placeholder="Car model..." autofocus/>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Year:</label>
+            <div class="row">
+                <div class="col-50">
+                    <label>Consumption:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="consumption" required="required" placeholder="Consumption in l/100km..."/>
+                </div>
             </div>
-            <div class="col-50">
-                <input type="number" name="year" maxlength="4" required="required" placeholder="Production year of the car..."/>
+            <div class="row">
+                <div class="col-50">
+                    <label>Color:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="color" required="required" placeholder="Car color..."/>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Availability:</label>
+            <div class="row">
+                <div class="col-50">
+                    <label>Manufacturer:</label>
+                </div>
+                <div class="col-50">
+                    <div class="select">
+                        <script>
+                            $.getJSON('manufacturerNames', function (data) {
+                                var select = $('<select name="manufacturer" required="required"></select>');
+                                $.each(data, function (key, value) {
+                                    var option = $('<option value="' + value+ '">' + value + '</option>');
+                                    select.append(option);
+                                });
+                                $(".select").append(select);
+                            })
+                        </script>
+                    </div>
+                </div>
             </div>
-            <div class="col-50">
-                <input type="number" name="available" required="required" placeholder="How many is available..."/>
+            <div class="row">
+                <div class="col-50">
+                    <label>Year:</label>
+                </div>
+                <div class="col-50">
+                    <input type="number" name="year" maxlength="4" required="required" placeholder="Production year of the car..."/>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-50">
-                <label>Horse power</label>
+            <div class="row">
+                <div class="col-50">
+                    <label>Availability:</label>
+                </div>
+                <div class="col-50">
+                    <input type="number" name="available" required="required" placeholder="How many is available..."/>
+                </div>
             </div>
-            <div class="col-50">
-                <input type="number" name="horsepower" required="required" placeholder="Horse power of the car..."/>
+            <div class="row">
+                <div class="col-50">
+                    <label>Horse power</label>
+                </div>
+                <div class="col-50">
+                    <input type="number" name="horsepower" required="required" placeholder="Horse power of the car..."/>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <input type="submit" value="Add car">
-        </div>
-    </form>
+            <div class="row">
+                <input type="submit" value="Add car">
+            </div>
+        </form>
+    </div>
 </div>
 </html>

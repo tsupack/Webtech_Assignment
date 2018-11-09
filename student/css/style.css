@@ -1,7 +1,9 @@
+/*Style elements of body.*/
 body{
     background: lightseagreen;
     font-family: "Times New Roman", Times, serif;
 }
+/*Style elements of links*/
 a:Link{
     color:white;
     text-decoration: none;
@@ -10,16 +12,22 @@ a:visited{
     color:white;
     text-decoration: none;
 }
+/*Style elements of basic buttons.*/
+#button_div{
+    display: block;
+    text-align: center;
+}
 button{
     background-color: lightseagreen;
     color: white;
     padding: 12px 20px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    alignment: center;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     font-size: 15px;
@@ -28,20 +36,21 @@ button{
 button:HOVER{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+/*Style elements of main body, menu bar and the title.*/
 #everything{
-    margin:auto;
+    margin: auto;
     width: 100%;
     alignment: center;
 }
 #banner{
-    height: 100px;
+    height: 60px;
     margin: 0px 50px 0px 50px;
-    font-size: 100px;
+    font-size: 80px;
     color: white;
     text-align: center;
 }
 #menuBar{
-    margin-top: 60px;
+    margin-top: 40px;
     background: lightblue;
     font-size: 17px;
     font-family: "Arial", sans-serif;
@@ -50,11 +59,11 @@ button:HOVER{
 }
 #menuBar .menuButton{
     width: 160px;
-    height: 25px;
+    height: 20px;
     background: gray;
     border: 2px solid black;
-    padding: auto;
-    text-align-all: center;
+    padding: 10px auto;
+    text-align: center;
     color: gray;
     margin: 20px;
     -webkit-border-radius: 20px;
@@ -62,11 +71,13 @@ button:HOVER{
     border-radius: 20px;
     display: inline-block;
     transition-duration: 0.5s;
+    font-size: 15px;
 }
 #menuBar .menuButton:HOVER{
     background-color: black;
     border: 2px solid grey;
 }
+/*Style elements of the loaded content HTMLs in general.*/
 #content_outer{
     border-radius: 20px;
     background: lightblue;
@@ -79,14 +90,18 @@ button:HOVER{
     margin-left: 20px;
     margin-right: 20px;
 }
+/*Style elements of the assignment description titles.*/
 #header{
     text-align: left;
     font-size: 45px;
     color: darkslategrey;
 }
+/*Style elements of the assignment description div.*/
 #Description{
     display: none;
+    padding-bottom: 5px;
 }
+/*Style elements of the "database" listing tables.*/
 #allTable{
     border-collapse: collapse;
     text-align: center;
@@ -109,6 +124,7 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background: lightblue;
 }
+/*Style elements of the forms used to add data to the "database".*/
 input[type=text], input[type=date], input[type=number], select{
     width: 100%;
     padding: 12px;
@@ -118,7 +134,7 @@ input[type=text], input[type=date], input[type=number], select{
     resize: vertical;
     font-family: "Arial", sans-serif;
 }
-label {
+label{
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
@@ -127,6 +143,7 @@ input[type=submit]{
     color: white;
     padding: 12px 20px;
     margin-top: 6px;
+    margin-bottom: 6px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -138,10 +155,11 @@ input[type=submit]{
 input[type=submit]:HOVER {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+/*Style elements of the main frame of the forms.*/
 .container{
     margin: auto;
     width: 70%;
-    padding: 20px;
+    padding: 10px;
 }
 .col-50{
     float: left;
@@ -159,9 +177,55 @@ input[type=submit]:HOVER {
         margin-top: 0;
     }
 }
+/*Style elements of the listing functions of the page.*/
+.car_counter{
+    text-align: center;
+}
+.carlist_col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding-bottom: 10px;
+}
+.carlist_container{
+    margin: auto;
+    padding-bottom: 10px;
+}
+.manu_counter{
+    padding-top: 10px;
+    text-align: center;
+}
+.manulist_container{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Style elements of authentication.*/
 #author{
     text-align: center;
+    padding-top: 5px;
     color: darkslategray;
     font-size: 10px;
     font-family: "Arial", sans-serif;
+}
+/*Animation keyframes.*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/*Animation creation.*/
+.fade-in {
+    /*Making things invisible upon start*/
+    opacity:0;
+    /*Calling keyframe named fadeIn, using animation ease-in and repeat it only 1 time*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+    /*Making sure that after the animation is done it remains at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.7s;
+    -moz-animation-duration:0.7s;
+    animation-duration:0.7s;
 }
