@@ -14,9 +14,13 @@ $(function (){
                 if (confirm("Submission successful! Would you like to see all the manufacturers?")) {
                     $("#content").load("listmanufacturers.html");
                 }
+                document.getElementById("addmanu").reset();
+                document.querySelector("#date_field").value = new Date().toISOString().substr(0, 10);
             },
             error: function () {
                 window.alert("Submission failed!");
+                document.getElementById("addmanu").reset();
+                document.querySelector("#date_field").value = new Date().toISOString().substr(0, 10);
             }
         })
     })

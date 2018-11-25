@@ -21,9 +21,11 @@ $(function (){
                 if (confirm("Submission successful! Would you like to see all the cars?")) {
                     $("#content").load("listcars.html");
                 }
+                document.getElementById("addcar").reset();
             },
             error: function () {
                 window.alert("Submission failed!");
+                document.getElementById("addcar").reset();
             }
         })
     })
