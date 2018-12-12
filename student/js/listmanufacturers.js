@@ -1,11 +1,6 @@
 $(document).ready(function () {
     $.getJSON('manufacturers', function (data) {
-        var count = 0;
-        $.each(data, function () {
-            count++;
-        });
-        var p = $('<p>There are <b>' + count + '</b> manufacturers in the database at the moment.</p>');
-        $(".manu_counter").append(p);
+        $(".manu_counter").append($('<p>There are <b>' + data.length + '</b> manufacturers in the database at the moment.</p>'));
     });
 });
 
