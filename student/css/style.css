@@ -13,7 +13,7 @@ a:visited{
     text-decoration: none;
 }
 /*Style elements of basic buttons.*/
-#button_div{
+#buttonDiv{
     display: block;
     text-align: center;
 }
@@ -31,7 +31,7 @@ button{
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     font-size: 15px;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 }
 button:HOVER{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -71,7 +71,7 @@ button:HOVER{
     border-radius: 20px;
     cursor: pointer;
     display: inline-block;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     font-size: 15px;
 }
 #menuBar .menuButton:HOVER{
@@ -79,26 +79,26 @@ button:HOVER{
     border: 2px solid grey;
 }
 /*Style elements of the loaded content HTMLs in general.*/
-#content_outer{
+#contentOuter{
     border-radius: 20px;
     background: lightblue;
     margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
 }
-#content{
+.content{
     text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
 }
 /*Style elements of the assignment description titles.*/
-#header{
+.header{
     text-align: left;
     font-size: 45px;
     color: darkslategrey;
 }
 /*Style elements of the assignment description div.*/
-#Description{
+#description{
     display: none;
     padding-bottom: 5px;
 }
@@ -111,12 +111,12 @@ button:HOVER{
     alignment: center;
     border: 1px solid black;
 }
-#allTableth{
+#allTableTableHeader{
     border: 1px solid black;
     font-size: 20px;
     height: 25px;
 }
-#allTabletd{
+#allTableTableDimension{
     border: 1px solid black;
 }
 tr:nth-child(even){
@@ -151,7 +151,7 @@ input[type=submit]{
     float: right;
     font-family: "Times New Roman", Times, serif;
     font-size: 15px;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 }
 input[type=submit]:HOVER {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -162,7 +162,7 @@ input[type=submit]:HOVER {
     width: 70%;
     padding: 10px;
 }
-.col-50{
+.col{
     float: left;
     width: 50%;
     margin-top: 6px;
@@ -173,30 +173,30 @@ input[type=submit]:HOVER {
     clear: both;
 }
 @media screen and (max-width: 600px){
-    .col-50, input[type=submit] {
+    .col, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 }
 /*Style elements of the listing functions of the page.*/
-.car_counter{
+.carCounter{
     text-align: center;
 }
-.carlist_col-50 {
+.carListCol {
     float: left;
     width: 50%;
     margin-top: 6px;
     padding-bottom: 10px;
 }
-.carlist_container{
+.carListContainer{
     margin: auto;
     padding-bottom: 10px;
 }
-.manu_counter{
+.manufacturerCounter{
     padding-top: 10px;
     text-align: center;
 }
-.manulist_container{
+.manufacturerListContainer{
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -210,23 +210,23 @@ input[type=submit]:HOVER {
     font-family: "Arial", sans-serif;
 }
 /*Animation keyframes.*/
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes FadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes FadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes FadeIn { from { opacity:0; } to { opacity:1; } }
 /*Animation creation.*/
-.fade-in {
+.fadeIn {
     /*Making things invisible upon start*/
     opacity:0;
     /*Calling keyframe named fadeIn, using animation ease-in and repeat it only 1 time*/
-    -webkit-animation:fadeIn ease-in 1;
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
+    -webkit-animation:FadeIn ease-in 1;
+    -moz-animation:FadeIn ease-in 1;
+    animation:FadeIn ease-in 1;
     /*Making sure that after the animation is done it remains at the last keyframe value (opacity: 1)*/
     -webkit-animation-fill-mode:forwards;
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 
-    -webkit-animation-duration:0.7s;
-    -moz-animation-duration:0.7s;
-    animation-duration:0.7s;
+    -webkit-animation-duration:0.6s;
+    -moz-animation-duration:0.6s;
+    animation-duration:0.6s;
 }

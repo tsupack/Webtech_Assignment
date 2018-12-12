@@ -19,13 +19,12 @@ $(function (){
             data: $('form').serialize(),
             success: function () {
                 if (confirm("Submission successful! Would you like to see all the cars?")) {
-                    $("#content").load("listcars.html");
+                    $(".content").load("listCars.html");
                 }
-                document.getElementById("addcar").reset();
+                document.getElementById("addCar").reset();
             },
             error: function () {
                 window.alert("Submission failed!");
-                document.getElementById("addcar").reset();
             }
         })
     })

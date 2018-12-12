@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    document.querySelector("#date_field").value = new Date().toISOString().substr(0, 10);
+    today();
 });
 
 $(function (){
@@ -12,16 +12,19 @@ $(function (){
             data: $('form').serialize(),
             success: function () {
                 if (confirm("Submission successful! Would you like to see all the manufacturers?")) {
-                    $("#content").load("listmanufacturers.html");
+                    $(".content").load("listManufacturers.html");
                 }
-                document.getElementById("addmanu").reset();
-                document.querySelector("#date_field").value = new Date().toISOString().substr(0, 10);
+                document.getElementById("addManufacturer").reset();
+                today();
             },
             error: function () {
                 window.alert("Submission failed!");
-                document.getElementById("addmanu").reset();
-                document.querySelector("#date_field").value = new Date().toISOString().substr(0, 10);
+                today();
             }
         })
     })
 });
+
+function today(){
+    document.querySelector("#dateField").value = new Date().toISOString().substr(0, 10);
+}

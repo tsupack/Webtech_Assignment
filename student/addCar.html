@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="application/javascript" src="js/addcar.js"></script>
-<div class="fade-in">
+<script type="application/javascript" src="js/addCar.js"></script>
+<div class="fadeIn">
     <div class="container">
-        <form id="addcar" action="/addCar" method="post">
+        <form id="addCar" action="/addCar" method="post">
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Car model:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="text" name="name" required="required" placeholder="Car model..." autofocus/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Consumption:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="text" name="consumption" required="required" placeholder="Consumption in l/100km..."/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Color:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="text" name="color" required="required" placeholder="Car color..."/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Manufacturer:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <div class="select">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Year:</label>
                 </div>
-                <div class="col-50">
-                    <input type="number" name="year" maxlength="4" required="required" placeholder="Production year of the car..."/>
+                <div class="col">
+                    <input type="number" name="year" min="1900" max="2100" required="required" placeholder="Production year of the car..."/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Availability:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="number" name="available" required="required" placeholder="How many is available..."/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Horse power</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="number" name="horsepower" required="required" placeholder="Horse power of the car..."/>
                 </div>
             </div>
             <div class="row">
-                <input type="submit" value="Add car">
+                <input type="submit" value="Add car" title="Click to submit!">
             </div>
         </form>
     </div>

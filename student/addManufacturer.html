@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="application/javascript" src="js/addmanufacturer.js"></script>
-<div class="fade-in">
+<script type="application/javascript" src="js/addManufacturer.js"></script>
+<div class="fadeIn">
     <div class="container">
-        <form id="addmanu" action="/addManufacturer" method="post">
+        <form id="addManufacturer" action="/addManufacturer" method="post">
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Name:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="text" name="name" required="required" placeholder="Manufacturer name..." autofocus/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Country:</label>
                 </div>
-                <div class="col-50">
+                <div class="col">
                     <input type="text" name="country" required="required" placeholder="The origin country of the manufacturer..."/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-50">
+                <div class="col">
                     <label>Founded:</label>
                 </div>
-                <div class="col-50">
-                    <input id="date_field" type="date" name="founded" required="required" />
+                <div class="col">
+                    <input id="dateField" type="date" name="founded" required="required" />
                 </div>
             </div>
             <div class="row">
-                <input type="submit" value="Add manufacturer">
+                <input type="submit" value="Add manufacturer" title="Click to submit!">
             </div>
         </form>
     </div>
